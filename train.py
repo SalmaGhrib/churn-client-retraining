@@ -32,7 +32,7 @@ metrics = {
     "recall": float(recall_score(y_test, pred, zero_division=0)),
     "f1": float(f1_score(y_test, pred, zero_division=0)),
 }
-
+#bon on espereeeee 
 joblib.dump(model, MODEL_OUTPUT)
 with open("metrics.json", "w") as f:
     json.dump(metrics, f, indent=2)
