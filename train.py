@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 DATASET_PATH = os.getenv("DATASET_PATH", "dataset.csv")
 TARGET_COLUMN = os.getenv("TARGET_COLUMN", "churn")
 MODEL_OUTPUT = os.getenv("MODEL_OUTPUT", "model.pkl")
-# second github retraining testdf = pd.read_csv(DATASET_PATH) lo,o 785
+# second github retraining testdf 
 if TARGET_COLUMN not in df.columns:
     raise ValueError(f"Target '{TARGET_COLUMN}' not found. Columns: {list(df.columns)}")
 
